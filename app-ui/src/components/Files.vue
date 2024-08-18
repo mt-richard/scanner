@@ -202,10 +202,17 @@ export default {
       const formData = new FormData();
       formData.append('file', file);
 
+      // Retrieve the token from localStorage or another source
+      // const token = localStorage.getItem('authToken'); // Adjust this line according to where you store the token
+       const token = "csfdafwere";
+      
       this.$emit('mask', 1);
-      Common.fetch('http://192.168.30.24:8000/documents/upload_file_in_bucket', {
+      Common.fetch('http://192.168.30.24:8000/documents/upload_file_in_bucket/', {
         method: 'POST',
         body: formData,
+        headers: {
+          'Authorization': `Bearer ${token}`, // Add the token to the Authorization header
+        },
       })
         .then(response => response.json())
         .then(data => {
