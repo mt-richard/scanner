@@ -1,0 +1,71 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Dependency directories
+node_modules
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Release folders
+dist
+
+# VSCode
+.vscode
+
+# Project specific
+app-server/**/devices.json
+app-server/data/output/*
+app-server/data/temp/*
+app-server/data/thumbnail/*
+app-server/data/preview/*.tif
+**/config.local.js
+var
+debian
+
+# Jekyll
+.bundle
+_site
+.jekyll-metadata
+Gemfile.lock
