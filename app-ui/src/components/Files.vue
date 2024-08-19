@@ -207,7 +207,7 @@ export default {
        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2NjA0NzU4LCJpYXQiOjE3MjQwMTI3NTgsImp0aSI6IjE4ZWNmNDUwYzdhZjQ3NGViNDc2OGIxNjc4N2NiZDgyIiwidXNlcl9pZCI6MSwic3RhZmZfaWQiOjEsImdyb3VwcyI6W3siaWQiOjMyLCJuYW1lIjoiQWRtaW5pc3RyYXRpb24ifV19.mVc2jbonqf6izNUKrem2Q4XsEBiof4uGEMU60FmTFuM";
       
       this.$emit('mask', 1);
-      Common.fetch('http://192.168.30.24:8000/documents/upload_file_in_bucket/', {
+      Common.fetch('http://192.168.1.71:8000/documents/upload_file_in_bucket/', {
         method: 'POST',
         body: formData,
         headers: {
